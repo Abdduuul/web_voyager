@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Voyager - Jelajahi Keindahan Indonesia</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tautan ke File CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                Nusantara<span class="text-teal-500">Voyager</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#hero" class="text-gray-600 hover:text-teal-500 transition duration-300">Beranda</a>
+                <a href="#features" class="text-gray-600 hover:text-teal-500 transition duration-300">Fitur</a>
+                <a href="#destinations" class="text-gray-600 hover:text-teal-500 transition duration-300">Destinasi</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-teal-500 transition duration-300">Testimoni</a>
+            </div>
+            <a href="#"
+                class="hidden md:block bg-teal-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-teal-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                Booking Sekarang
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#hero" class="block py-2 text-gray-600 hover:text-teal-500">Beranda</a>
+            <a href="#features" class="block py-2 text-gray-600 hover:text-teal-500">Fitur</a>
+            <a href="#destinations" class="block py-2 text-gray-600 hover:text-teal-500">Destinasi</a>
+            <a href="#testimonials" class="block py-2 text-gray-600 hover:text-teal-500">Testimoni</a>
+            <a href="#"
+                class="block mt-4 bg-teal-500 text-white text-center px-6 py-2 rounded-full font-semibold hover:bg-teal-600">
+                Booking Sekarang
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-[85vh] flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Pemandangan+Indah+Indonesia');">
+            </div>
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 text-center px-4 hero-text-animate">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
+                    Temukan Surga Tersembunyi di Indonesia
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">
+                    Kami membawa Anda ke destinasi paling menakjubkan di seluruh nusantara, dari Sabang sampai Merauke.
+                </p>
+                <a href="#destinations"
+                    class="bg-teal-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-teal-600 transition duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    Mulai Petualangan Anda
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mengapa Memilih Kami?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                    Kami memberikan pengalaman perjalanan yang tak terlupakan dengan layanan terbaik.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Feature 1 -->
+                    <div
+                        class="p-8 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div
+                            class="bg-teal-100 text-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="map-pin" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Destinasi Eksotis</h3>
+                        <p class="text-gray-600">Jelajahi lokasi-lokasi pilihan yang jarang terjamah dan penuh pesona
+                            alam.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="p-8 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div
+                            class="bg-teal-100 text-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="shield-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Aman & Terpercaya</h3>
+                        <p class="text-gray-600">Perjalanan Anda dijamin aman dengan asuransi dan pemandu profesional.
+                        </p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="p-8 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div
+                            class="bg-teal-100 text-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="wallet" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Harga Terbaik</h3>
+                        <p class="text-gray-600">Dapatkan paket perjalanan dengan harga kompetitif tanpa mengurangi
+                            kualitas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations Section -->
+        <section id="destinations" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Destinasi Populer</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Destination Card 1 -->
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                        <img src="https://placehold.co/600x400/34d399/FFFFFF?text=Raja+Ampat" alt="Raja Ampat"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Raja Ampat, Papua</h3>
+                            <p class="text-gray-600 mb-4">Surga bawah laut dengan keanekaragaman hayati terkaya di
+                                dunia.</p>
+                            <a href="#" class="font-semibold text-teal-500 group-hover:text-teal-600">Lihat Detail <i
+                                    data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Destination Card 2 -->
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                        <img src="https://placehold.co/600x400/fbbf24/FFFFFF?text=Bromo" alt="Gunung Bromo"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Gunung Bromo, Jawa Timur</h3>
+                            <p class="text-gray-600 mb-4">Saksikan matahari terbit magis dari puncak gunung berapi yang
+                                ikonik.</p>
+                            <a href="#" class="font-semibold text-teal-500 group-hover:text-teal-600">Lihat Detail <i
+                                    data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Destination Card 3 -->
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                        <img src="https://placehold.co/600x400/60a5fa/FFFFFF?text=Bali" alt="Ubud, Bali"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Ubud, Bali</h3>
+                            <p class="text-gray-600 mb-4">Temukan ketenangan di tengah sawah terasering dan budaya yang
+                                kental.</p>
+                            <a href="#" class="font-semibold text-teal-500 group-hover:text-teal-600">Lihat Detail <i
+                                    data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Apa Kata Pelanggan Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                        <p class="text-gray-600 italic mb-6">"Pengalaman terbaik seumur hidup! Pemandu wisatanya sangat
+                            ramah dan berpengetahuan luas. Raja Ampat benar-benar luar biasa. Terima kasih Nusantara
+                            Voyager!"</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/100x100/e2e8f0/334155?text=A" alt="Pelanggan 1"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Andi Pratama</h4>
+                                <p class="text-sm text-gray-500">Traveler dari Jakarta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                        <p class="text-gray-600 italic mb-6">"Perjalanan ke Bromo sangat terorganisir dengan baik.
+                            Semuanya sempurna dari awal hingga akhir. Saya pasti akan menggunakan jasa mereka lagi untuk
+                            liburan berikutnya."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/100x100/e2e8f0/334155?text=S" alt="Pelanggan 2"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Siti Lestari</h4>
+                                <p class="text-sm text-gray-500">Keluarga dari Surabaya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-teal-500 to-cyan-500 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap Untuk Berpetualang?</h2>
+                <p class="max-w-2xl mx-auto mb-8">Jangan tunda lagi impian Anda untuk menjelajahi keindahan Indonesia.
+                    Hubungi kami sekarang!</p>
+                <a href="#"
+                    class="bg-white text-teal-600 px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    Hubungi Kami
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Nusantara<span class="text-teal-400">Voyager</span></h3>
+                    <p class="text-gray-400">Menghadirkan pengalaman perjalanan tak terlupakan di seluruh penjuru
+                        Indonesia.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="text-gray-400 hover:text-white">Beranda</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Fitur</a></li>
+                        <li><a href="#destinations" class="text-gray-400 hover:text-white">Destinasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><i data-lucide="map-pin" class="w-5 h-5 mr-2 mt-1"></i>Jl. Sudirman
+                            No. 123, Jakarta, Indonesia</li>
+                        <li class="flex items-center"><i data-lucide="mail"
+                                class="w-5 h-5 mr-2"></i>info@nusantaravoyager.com</li>
+                        <li class="flex items-center"><i data-lucide="phone" class="w-5 h-5 mr-2"></i>(021) 123-4567
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"
+                                class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram"
+                                class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"
+                                class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 Nusantara Voyager. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tautan ke File JavaScript Eksternal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
