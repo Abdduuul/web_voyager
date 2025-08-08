@@ -1,6 +1,6 @@
 # Nusantara Voyager - Landing Page Agen Perjalanan
 
-![Nusantara Voyager Screenshot](https://placehold.co/800x400/14b8a6/FFFFFF?text=Nusantara+Voyager+Website)
+![Nusantara Voyager Screenshot](f.png)
 
 Ini adalah proyek landing page (halaman arahan) untuk sebuah agen perjalanan fiksi bernama **Nusantara Voyager**. Situs web ini dirancang untuk menjadi modern, menarik secara visual, dan sepenuhnya responsif, menampilkan keindahan destinasi wisata di Indonesia.
 
